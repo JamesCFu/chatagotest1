@@ -1,0 +1,627 @@
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+<!DOCTYPE html>
+<html lang="en" class="groups-page">
+  <head>
+    
+    <meta name="google-site-verification" content="kEAzu03WsQ0E4iXsZj0zLDIYNTU95GTyJK-F0mRtU0Y" />
+    <meta name="verify-v1" content="gdousCrb+gUJU66vGkl7atiDp0hQf7erC0ykCPPJ2kI=" />
+	<meta name="inmobi-site-verification" content="efd84050b6d493f1f0256339f536257d">
+
+      
+    <meta charset="utf-8">
+    <title>Chatango</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+      }
+      h1 {
+        font-size: 1.5em;
+        font-weight: normal;
+        margin-top: .7em;
+        margin-bottom: .3em;
+        color: #000;
+      }
+      h2 {
+        font-weight: normal;
+        font-size: 110%;
+        color:#686868;
+        margin-bottom: .8em;
+      }
+
+      body {
+        padding: 1em;
+        font-size: 80%;
+        font-family: sans-serif;
+      }
+
+      #wrapper {
+          width:100%;
+          min-width:960px;
+          max-width:1100px;
+          margin: 0 auto;
+          overflow:hidden;
+      }
+
+      #leftwrapper {
+          float: left;
+          width: 100%;
+      }
+
+      #left,
+      #right {
+
+      }
+
+      #left {
+          margin-right: 346px; 
+          margin-right: calc(336px + 1em);
+      }
+
+      #right {
+          width: 336px;
+          margin-left: -336px;
+          float: left;
+      }
+
+      #iframe_wrapper {
+          width:100%;
+          height:580px;
+      }
+
+      #header,
+      #footer {
+        overflow:hidden;
+        color: #0084ef;
+        margin: 0 auto;
+        min-width:650px;
+        max-width:1100px;
+        margin-bottom: 1em;
+      }
+
+      #header a,
+      #footer a {
+        text-decoration:none;
+        color: #0084ef;
+        cursor:pointer;
+        margin-left: 1.5em;
+      }
+
+      #footer a {
+        padding-top: 1em;
+        display: inline-block;
+      }
+
+      #footer {
+        text-align:center;
+      }
+
+      #branding {
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        color: #666;
+        float:left;
+      }
+      
+      div#top_links {
+        padding-top: .6em;
+        float:right;
+      }
+      
+      .tablet div#top_links {
+        padding-top: .3em;
+      }
+      
+      #LOGO {
+        height: 2.6em; 
+        width: auto;
+        padding-left: .9em;
+      }
+      
+      .tablet img#LOGO {
+        height: 1.7em;
+      }
+
+      #side_copy {
+        color: #666;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #CCC;
+        margin-bottom: 1em;
+      }
+
+      #side_copy li {
+        margin-left: 1em;
+        font-weight: normal;
+        font-size: 110%;
+        color:#686868;
+        margin-bottom: .8em;
+      }
+
+      #features_copy {
+        padding-top: 1em;
+        border-top: 1px solid #CCC;
+        margin-top: 1.5em;
+      }
+
+      #tagline {
+        opacity: 0;
+        transition: opacity 1s linear .5s;
+        margin-right: .5em;
+      }
+
+      .btn {
+        background-color: #FFCC00;
+        display: inline-block;
+        color: #333 !important;
+        padding: .5em;
+      }
+
+       
+
+      html.groups-page,
+      .groups-page body,
+      .groups-page #wrapper,
+      .groups-page #left,
+      .groups-page #iframe_wrapper {
+        height: 100%;
+      }
+
+      .groups-page body {
+        display:table;
+        width:100%;
+        max-width:1100px;
+        margin: 0 auto !important;
+        overflow:hidden;
+      }
+
+      body.MobileGroupsHome {
+        padding: .25em;
+      }
+
+      body.MobileGroupsHome #top_links {
+        font-size: 80%;
+        padding-top: 1em;
+        margin-right: 1em;
+      }
+
+      .groups-page #header,
+      .groups-page #wrapper,
+      .groups-page #footer {
+        display:table-row;
+      }
+
+      .groups-page #leftwrapper,
+      .groups-page #right {
+        display: table-cell;
+        height: 100%;
+      }
+
+      
+
+      #pm_link,
+      #help_link,
+      #logout_link,
+      #login_button,
+      #side_copy,
+      #features_copy {
+        display:none;
+      }
+
+      .MobileNoGroupsHome #top_links {
+        font-size: 180%;
+      }
+
+      .MobileNoGroupsHome #branding {
+        margin-top: .3em;
+      }
+
+      #ad {
+        margin-top: 2.5em;
+      }
+
+    </style>
+
+    <script>
+      /**
+       * Convert Cheetah vars to JS
+      **/
+      function cheetahToJS_chatango() {
+
+        var grps = [];
+        grps = [["inschool", ""]];
+
+        var recent_grps = [];
+
+         var False = false;
+         var True = true;
+         CH_chatango = {
+             has_session    : True
+             , username     : "rockstarmonkey"
+             , groups       : grps
+             , recent_groups: recent_grps
+             , num_msgs     : Number(0)
+             , base_domain  : "chatango.com"
+             , session_token  : "E4825102BBD73D7662F001AE3B3CDAA1ACAACC11946A88D0A61A7B4B058EDFE4E3F345EE122B5A2E"
+         };
+         ENV_chatango = {
+             mobile     : False
+             , tablet   : False
+             , desktop  : (!False && !False)
+             , stageW   : document.documentElement.clientWidth
+             , stageH   : document.documentElement.clientHeight
+             // stageHKeyboardDown used for Android, because the keyboard can remain partially up from the log in page - need to calculate the stage Height with no Keyboard
+             , stageHKeyboardDown: Math.round((window.innerWidth/window.outerWidth) * window.outerHeight)  
+         }
+      }
+
+      function childLoaded_chatango() {
+        homepage_chatango = new (document.getElementById("homepage_iframe").contentWindow.chatango.homepage[homePageClass_chatango])(CH_chatango, ENV_chatango);
+      };
+
+      function initCopy_chatango(copy, scale, env) {
+        document.body.style.fontSize = scale + "%";
+        var logoutLink = document.getElementById("logout_link");
+        var pmLink = document.getElementById("pm_link");
+        var helpLink = document.getElementById("help_link");
+        var androidAppLink = document.getElementById("android_app_link");
+        var loginBtn = document.getElementById("login_button");
+        var signupLink = document.getElementById("signup_link");
+        var tagLine = document.getElementById("tagline");
+        var sideCopy = document.getElementById("side_copy");
+        var featuresCopy = document.getElementById("features_copy");
+        var ftrHelpLink = document.getElementById("ftr_help_link");
+        var ftrTermsLink = document.getElementById("ftr_tou_link");
+        var ftrPrivacyLink = document.getElementById("ftr_pp_link");
+
+        pmLink.href     = "https://" + CH_chatango.username + "." + CH_chatango.base_domain;
+        pmLink.innerHTML = copy.pm;
+        
+        if(!env.isIOS && !env.isAndroidApp){
+          androidAppLink.href   = "https://play.google.com/store/apps/details?id=com.chatango.android";
+          androidAppLink.innerHTML  = copy.android_app_short;
+        }
+        
+        if(homePageClass_chatango != "MobileGroupsHome"){
+          helpLink.href   = "/help";
+          loginBtn.href   = "/login";
+          signupLink.href   = "/signupdir";
+          logoutLink.href = "https://st." + CH_chatango.base_domain + "/script/signout?token=" + "E4825102BBD73D7662F001AE3B3CDAA1ACAACC11946A88D0A61A7B4B058EDFE4E3F345EE122B5A2E";
+          ftrHelpLink.href   = "/help";
+          ftrTermsLink.href   = "/page?full_terms";
+          ftrPrivacyLink.href   = "/page?full_privacy";
+
+          logoutLink.innerHTML      = copy.logout;
+          pmLink.innerHTML          = copy.pm;
+          helpLink.innerHTML        = copy.help;
+          androidAppLink.innerHTML  = copy.android_app;
+          loginBtn.innerHTML        = copy.login;
+          signupLink.innerHTML      = copy.signup;
+          ftrHelpLink.innerHTML     = copy.help;
+          ftrTermsLink.innerHTML    = copy.terms;
+          ftrPrivacyLink.innerHTML  = copy.privacy;
+          if(copy.sidecopy) sideCopy.innerHTML = copy.sidecopy; 
+          if(copy.featurescopy) featuresCopy.innerHTML = copy.featurescopy;
+        }
+
+        switch (homePageClass_chatango){
+          case "GroupsHome":
+            // you must be logged in to have groups!
+            logoutLink.style.display  = "inline";
+            pmLink.style.display      = "inline";
+            helpLink.style.display    = "inline";
+            loginBtn.style.display    = "none";
+            signupLink.style.display  = "none";
+            break;
+          case "MobileGroupsHome":
+            pmLink.style.display      = "inline";
+            break;
+          case "NoGroupsHome":
+          case "MobileNoGroupsHome":
+            if(CH_chatango.has_session){
+              logoutLink.style.display  = "inline";
+              pmLink.style.display      = "inline";
+              signupLink.style.display  = "none";
+              loginBtn.style.display    = "none";
+            } else {
+              logoutLink.style.display  = "none";
+              pmLink.style.display      = "none";
+              androidAppLink.display    = "none";
+              signupLink.style.display  = "inline";
+              loginBtn.style.display    = "inline-block";
+            }
+            helpLink.style.display      = "inline";
+            sideCopy.style.display      = "block";
+            featuresCopy.style.display  = "block";
+            tagLine.innerHTML           = copy.tagline;
+            tagline.style.opacity       = 1;
+
+            break;
+          default:
+            break;
+        }
+
+        if(manualResize_chatango_) onResize_chatango();
+
+      };
+
+      var chatango_retry_interval = 1;
+      function init_chatango() {
+      
+        cheetahToJS_chatango();
+        
+        var hasGroups = (CH_chatango.groups.length > 0 || CH_chatango.recent_groups.length > 0);
+
+        // Embed appropriate iframe
+        var framesrc = (hasGroups)? "g_" : "ng_";
+        homePageClass_chatango = (hasGroups)? "GroupsHome" : "NoGroupsHome";
+        if(ENV_chatango.mobile){
+          framesrc += "m";
+          homePageClass_chatango = "Mobile" + homePageClass_chatango;
+        }
+        if(ENV_chatango.tablet)  framesrc += "t";
+        if(ENV_chatango.desktop) framesrc += "d";
+        var iframeStr =  "<iframe id='homepage_iframe' "
+                       + "src = '"
+                       // + "st." + CH_chatango.base_domain + "/"
+                       + "h5/gz/homepage/homepage_" + framesrc + ".html' "
+                       + "style='border:0;position:relative;top:0;left:0;bottom:0;right:0;width:100%;height:100%;' "
+                       + "marginheight='0' marginwidth='0' frameborder='0'></iframe>";
+        document.getElementById("iframe_wrapper").innerHTML = iframeStr;
+
+        manualResize_chatango_ = false;
+        if(!ENV_chatango.mobile && hasGroups && navigator.userAgent.indexOf(' MSIE ') > -1){
+          window.onresize = onResize_chatango;
+          onResize_chatango();
+          manualResize_chatango_ = true;
+        }
+
+        document.body.className = homePageClass_chatango;
+
+        if(ENV_chatango.tablet) document.getElementById("header").className = "tablet";
+
+
+
+      }
+
+      function onResize_chatango(e){
+        var wrapper = document.getElementById("wrapper");
+        var iframeWrapper = document.getElementById("iframe_wrapper");
+        iframeWrapper.style.height = "100px";
+        iframeWrapper.style.height = wrapper.offsetHeight + "px";
+      }
+
+    </script>
+	<!-- Facebook Conversion Code for FB targeted campaign -->
+	<script>
+		(function() {
+	  	var _fbq = window._fbq || (window._fbq = []);
+	  	if (!_fbq.loaded) {
+			var fbds = document.createElement('script');
+			fbds.async = true;
+			fbds.src = '//connect.facebook.net/en_US/fbds.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(fbds, s);
+			_fbq.loaded = true;
+	  		}
+		})();
+		window._fbq = window._fbq || [];
+		window._fbq.push(['track', '6021305250289', {'value':'0.00','currency':'USD'}]);
+	</script>
+	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6021305250289&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+
+  <!-- BEGIN: Header Bidding -->
+	<script type="text/javascript">
+		var adsStart = (new Date()).getTime();
+		function detectWidth() {
+			return window.screen.width || window.innerWidth || window.document.documentElement.clientWidth || Math.min(window.innerWidth, window.document.documentElement.clientWidth) || window.innerWidth || window.document.documentElement.clientWidth || window.document.getElementsByTagName('body')[0].clientWidth;
+		}
+
+
+		var TIMEOUT = 2000;
+		var screenSizeMobile = 768;
+
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		var pbjs = pbjs || {};
+		pbjs.que = pbjs.que || [];
+		var adUnits = adUnits || [];
+
+		function initAdServer() {
+			if (pbjs.initAdserverSet) return;
+			(function() {
+				var gads = document.createElement('script');
+				gads.async = true;
+				gads.type = 'text/javascript';
+				var useSSL = 'https:' == document.location.protocol;
+				gads.src = (useSSL ? 'https:' : 'http:') +
+					'//www.googletagservices.com/tag/js/gpt.js';
+				var node = document.getElementsByTagName('script')[0];
+				node.parentNode.insertBefore(gads, node);
+			})();
+			pbjs.initAdserverSet = true;
+		};
+		pbjs.timeout = setTimeout(initAdServer, TIMEOUT);
+		pbjs.timeStart = adsStart;
+
+		
+		var appNexusOk = true; // bid on apn
+		
+
+		var dfpNetwork = '223571009';
+
+		// START: Defining adunits
+
+			
+			
+			
+			
+			
+			adUnits.push({
+				network: dfpNetwork,
+				adunit: 'Chatango_Desktop_HP_300x250_A',
+				size: [[300, 250]],
+				code: 'div-gpt-ad-Chatango_Desktop_HP_300x250_A'
+				});
+			
+			
+			
+			
+			
+
+		// END: Defining adunits                      
+
+		googletag.cmd.push(function() {
+		  if(adUnits){
+			for (var i = 0, len = adUnits.length; i < len; i++) {
+			  googletag.defineSlot('/'+adUnits[i].network+'/'+adUnits[i].adunit, adUnits[i].size, adUnits[i].code).addService(googletag.pubads());
+			}
+		  }
+		});
+
+		googletag.cmd.push(function() {
+			pbjs.que.push(function() {pbjs.setTargetingForGPTAsync();});
+			
+			googletag.pubads().setTargeting("noGoogle", "false"); // false: display google ; true: do not display google
+			
+
+			googletag.pubads().enableSingleRequest();
+			googletag.pubads().collapseEmptyDivs();
+			googletag.enableServices();
+		});
+	</script>
+	<script type="text/javascript" async="true" src="/javascript/prebid.js"></script>
+<!-- END: Header Bidding -->
+
+  </head>
+  <body style="margin:0; width:100%; height:100%;" onunload="" onload="init_chatango();"> 
+
+    <div id="header">
+      <div id="branding">
+        <img id="LOGO" class='c-logo' src="/images/html5/homepage/logo.png">
+      </div>
+      <div id="top_links">
+        <a id="android_app_link"></a>
+        <a id="pm_link"></a>
+        <a id="help_link"></a>
+        <a id="logout_link"></a>
+        <a id="signup_link"></a>
+        <a id="login_button" class="btn"></a>
+      </div>
+    </div>
+
+    <div id="wrapper">
+        <div id="leftwrapper">
+          <div id="left">
+            <div id="iframe_wrapper"></div>
+          </div>
+        </div>
+        <div id="right">
+          <div id="side_copy">
+
+          <h1>What is Chatango?</h1>
+          <h2>A live group on your site</h2>
+          <ul>
+          <li>Enhances video, breaking news, and <br/>developing stories
+          <li>Ideal for community, hobby, sports and weather sites
+          <li>Enables dialog between visitors and announcements from administrators
+          </ul>
+          </div>
+          <div id="ad">
+          	 
+	 	<!-- dfp_rect_code_home -->
+	 	<!-- Chatango_Desktop_HP_300x250_A -->
+<div id='div-gpt-ad-Chatango_Desktop_HP_300x250_A'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-Chatango_Desktop_HP_300x250_A'); });
+</script>
+</div>
+
+	 
+ 
+          
+          <br/>
+          <hr/>
+          <br/>
+          <span style = "font-weight:bold;">Chatango Android app:</span>
+          <br/>
+          <br/>
+          <a href="https://play.google.com/store/apps/details?id=com.chatango.android&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1">
+            <img width="160px" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" />
+          </a>
+          
+          </div>
+          
+
+          <div id="features_copy">
+          <h1>Features</h1>
+          <h2>Highly scalable</h2>
+          <h2>Moderate from any device</h2>
+          <h2>Intelligently matched banned words</h2>
+          <h2>Optional anonymity controlled by an administrator</h2>
+          <h2>Rate controls</h2>
+          <h2>HTML5 works on all platforms</h2>
+          <h2>Free</h2>
+          </div>
+
+
+        </div>
+        </div>
+    </div>
+
+    <div id="footer">
+    <a id="ftr_help_link"></a>
+    <a id="ftr_tou_link"></a>
+    <a id="ftr_pp_link"></a>
+    </div>
+
+    <script>
+
+      if ((/iphone|ipod|ipad/gi).test(navigator.appVersion)) {
+        window.onpageshow = function(evt) {
+          // If persisted then it is in the page cache, force a reload of the page.
+          if (evt.persisted) {
+             document.body.style.display = "none";
+             location.reload();
+          }
+        };
+      }
+
+    </script>
+
+
+
+    
+     <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7965405-1");
+pageTracker._trackPageview("/home/logged_in/owns");
+} catch(err) {}</script>
+
+
+  </body>
+</html>
+
+
