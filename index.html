@@ -71,94 +71,10 @@
 
 <meta property="og:description" content="A ChatterChat" />
 <meta property="og:site_name" content="Site name: ChatterChat" />
-<!-- BEGIN: Header Bidding -->
-	<script type="text/javascript">
-		var adsStart = (new Date()).getTime();
-		function detectWidth() {
-			return window.screen.width || window.innerWidth || window.document.documentElement.clientWidth || Math.min(window.innerWidth, window.document.documentElement.clientWidth) || window.innerWidth || window.document.documentElement.clientWidth || window.document.getElementsByTagName('body')[0].clientWidth;
-		}
 
-
-		var TIMEOUT = 2000;
-		var screenSizeMobile = 768;
-
-		var googletag = googletag || {};
-		googletag.cmd = googletag.cmd || [];
-		var pbjs = pbjs || {};
-		pbjs.que = pbjs.que || [];
-		var adUnits = adUnits || [];
-
-		function initAdServer() {
-			if (pbjs.initAdserverSet) return;
-			(function() {
-				var gads = document.createElement('script');
-				gads.async = true;
-				gads.type = 'text/javascript';
-				var useSSL = 'https:' == document.location.protocol;
-				gads.src = (useSSL ? 'https:' : 'http:') +
-					'//www.googletagservices.com/tag/js/gpt.js';
-				var node = document.getElementsByTagName('script')[0];
-				node.parentNode.insertBefore(gads, node);
-			})();
-			pbjs.initAdserverSet = true;
-		};
-		pbjs.timeout = setTimeout(initAdServer, TIMEOUT);
-		pbjs.timeStart = adsStart;
-
-		
-		var appNexusOk = true; // bid on apn
-		
-
-		var dfpNetwork = '223571009';
-
-		// START: Defining adunits
-
-			
-			
-			
-			
-			
-			
-			adUnits.push({
-				network: dfpNetwork,
-				adunit: 'Chatango_Desktop_Group_728x90_A',
-				size: [[728, 90]],
-				code: 'div-gpt-ad-Chatango_Desktop_Group_728x90_A'
-				});
-			
-			
-			
-			
-
-		// END: Defining adunits                      
-
-		googletag.cmd.push(function() {
-		  if(adUnits){
-			for (var i = 0, len = adUnits.length; i < len; i++) {
-			  googletag.defineSlot('/'+adUnits[i].network+'/'+adUnits[i].adunit, adUnits[i].size, adUnits[i].code).addService(googletag.pubads());
-			}
-		  }
-		});
-
-		googletag.cmd.push(function() {
-			pbjs.que.push(function() {pbjs.setTargetingForGPTAsync();});
-			
-			googletag.pubads().setTargeting("noGoogle", "true"); // false: display google ; true: do not display google
-			
-
-			googletag.pubads().enableSingleRequest();
-			googletag.pubads().collapseEmptyDivs();
-			googletag.enableServices();
-		});
-	</script>
-	<script type="text/javascript" async="true" src="/javascript/prebid.js"></script>
-<!-- END: Header Bidding -->
 
 
   
-  <!-- BEGIN: Header Bidding -->
-<!-- END: Header Bidding -->
-
   
  </head>
 
